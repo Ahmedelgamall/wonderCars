@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More cars</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css.map" />
+    <link
+      rel="stylesheet"
+      href="https://fastly.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/select2.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <!-- <div class="container"></div> -->
+        <a class="navbar-brand" href="index .html"
+          ><img class="logo" src="images/logo.02.jpg" /><span
+            >wonder cars</span
+          ></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="nav-1 navbar-nav dropdown">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link active"
+                data-bs-toggle="dropdown"
+                aria-current="page"
+                href="index .html"
+                ><a class="home-link" href="index .html">Home</a></a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Search
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Listing
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Pages <i class="fa-solid fa-chevron-down"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li>
+                  <a class="dropdown-item" href="more-cars.html">More Cars</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="aboutUs.html">About Us</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="contactUs.html">Contact</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="ourTeam.html"
+                    >Our team - simple</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="ourTeamAdvanced.html"
+                    >Our team - Advanced</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="sold.html">Sold</a></li>
+                <li>
+                  <a class="dropdown-item" href="loanCalculator.html"
+                    >Loan Calculator</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                <li>
+                  <a class="dropdown-item" href="panel-account.html">Account</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="login.html"
+                    >Login / Register</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="404page.html">404 Page</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav-2 navbar-nav flex-row">
+            <li>
+              <a href="panel-account.html"><i class="fa-solid fa-user"></i></a>
+            </li>
+            <li>
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+            <i
+              class="fa-solid fa-grip-lines-vertical"
+              style="color: rgba(0, 0, 0, 0.162); margin: 20px 0px 0px 7px"
+            ></i>
+            <li>
+              <a class="nav-link" href="login.html">Rigester</a>
+            </li>
+            <li>
+              <a class="add-listing nav-link" href="addListing.html"
+                ><i class="fa-solid fa-plus"></i> Add Listing</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="page-num">
+      <button>
+        <a class="home-btn" target="_blank" href="index .html">Homepage</a>
+      </button>
+      - <span>Search</span>
+    </div>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%SHOW MORE%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+
+
+
+
+    <div class="second-page categories-section">
+      <div class="container">
+        <div class="wrapper">
+          <ul class="list">
+            <li>
+              <div class="dropdowns row second-dropdowns">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 cat-btn">
+                  <div class="btn-group categories-button">
+                    <!-- <label for="brand">Brand: </label> -->
+                    <h5>Brand:</h5>
+                    <select
+                      name="brand"
+                      class="btn dropdown-toggle js-example-basic-single"
+                    >
+                    <option value="">Audi</option>
+                    <option value="">BMW</option>
+                    <option value="">Chevrolet</option>
+                    <option value="">Mercedes</option>
+                    <option value="">Range Rover</option>
+                    <option value="">Porche</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 cat-btn">
+                    <div class="btn-group categories-button">
+                      <!-- <label for="brand">Brand: </label> -->
+                      <h5>Mpdel:</h5>
+                      <select
+                        name="brand"
+                        class="btn dropdown-toggle js-example-basic-single"
+                      >
+                      <option value="">A4</option>
+                      <option value="">A5</option>
+                      <option value="">Q7</option>
+                      <option value="">RS5</option>
+                      </select>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 cat-btn">
+                    <div class="btn-group categories-button">
+                      <!-- <label for="brand">Brand: </label> -->
+                      <h5>condetion:</h5>
+                      <select
+                        name="brand"
+                        class="btn dropdown-toggle js-example-basic-single"
+                      >
+                      <option value="">NEW</option>
+                      <option value="">Used</option>
+                      </select>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 cat-btn">
+                    <div class="btn-group categories-button">
+                      <!-- <label for="brand">Brand: </label> -->
+                      <h5>Type:</h5>
+                      <select
+                        name="brand"
+                        class="btn dropdown-toggle js-example-basic-single"
+                      >
+                      <option value="">SUV</option>
+                      <option value="">Sedan</option>
+                      <option value="">Hathhback</option>
+                      <option value="">4x4</option>
+                      <option value="">Coupe</option>
+                      </select>
+                    </div>
+                </div>
+            </li>
+            <li></li>
+            <li></li>
+            <li>
+              <div class="dropdowns row second-dropdowns">
+              <div class="col-lg-3 col-md-4 col-sm-6 col-12 cat-btn">
+                  <div class="btn-group categories-button">
+                    <!-- <label for="brand">Brand: </label> -->
+                    <h5>color:</h5>
+                    <select
+                      name="brand"
+                      class="btn dropdown-toggle js-example-basic-single"
+                    >
+                    <option value="">Red</option>
+                      <option value="">Black</option>
+                      <option value="">White</option>
+                      <option value="">Grey</option>
+                      <option value="">Blue</option>
+                      <option value="">Green</option>
+                    </select>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 col-12 cat-btn">
+                <div class="categories-button">
+                  <div class="btn-group">
+                    <h5>Milage:</h5>
+                    <select
+                      name="brand"
+                      class="btn dropdown-toggle js-example-basic-single"
+                    >
+                    <option value="">10,000 miles</option>
+                      <option value="">30,000 miles</option>
+                      <option value="">50,000 miles</option>
+                      <option value="">70,000 miles</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 col-12 cat-btn">
+                <div class="categories-button">
+                  <div class="btn-group">
+                    <h5>Clynders:</h5>
+                    <select
+                      name="brand"
+                      class="btn dropdown-toggle js-example-basic-single"
+                    >
+                    <option value="">4V</option>
+                      <option value="">6V</option>
+                      <option value="">8V</option>
+                      <option value="">10V</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 col-12 cat-btn">
+                <div class="categories-button">
+                  <div class="btn-group">
+                    <h5>Milage:</h5>
+                    <select
+                      name="brand"
+                      class="btn dropdown-toggle js-example-basic-single"
+                    >
+                    <option value="">10,000 miles</option>
+                      <option value="">30,000 miles</option>
+                      <option value="">50,000 miles</option>
+                      <option value="">70,000 miles</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-4 col-sm-6 col-12 cat-btn">
+                <div class="categories-button">
+                  <div class="btn-group">
+                    <h5>Location:</h5>
+                    <input style="border: 0" type="text" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-4 col-sm-6 col-12 cat-btn">
+                <div class="categories-button">
+                  <h5 style="padding-left:10px;">Price:</h5>
+                  <div class="row" style="width:100%;">
+                    <div class="col-6">
+                      <div class="btn-group" style="width:90%;">
+                        <select
+                      name="brand"
+                      class="btn dropdown-toggle js-example-basic-single"
+                    >
+                    <option value="">25,000$</option>
+                      <option value="">30,000$</option>
+                      <option value="">50,000$</option>
+                      <option value="">70,000$</option>
+                    </select>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="btn-group">
+                        <select
+                      name="brand"
+                      class="btn dropdown-toggle js-example-basic-single"
+                    >
+                    <option value="">40,000$</option>
+                      <option value="">50,000$</option>
+                      <option value="">70,000$</option>
+                      <option value="">100,000$</option>
+                    </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <button class="show-moreCat-btn" id="next">Show More Caegories</button>
+         </ul>
+       </div>
+
+
+        
+        <hr />
+
+        <div class="container info">
+          <div class="row">
+            <div class="conds col-12">
+              <div class="row">
+                <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link active"
+                      id="pills-home-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-home"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-home"
+                      aria-selected="true"
+                    >
+                      NEW <span>(6)</span>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="pills-profile-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-profile"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-profile"
+                      aria-selected="false"
+                    >
+                      USED <span>(8)</span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="key-word col-12">
+                <span><i class="fa-solid fa-code-compare"></i> Compare</span>
+                <input type="text" placeholder="Enter Keyword" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="tab-content" id="pills-tabContent">
+        <div
+          class="tab-pane fade show active"
+          id="pills-home"
+          role="tabpanel"
+          aria-labelledby="pills-home-tab"
+          tabindex="0"
+        >
+          <div class="row">
+            <div class="second-page results">
+              <div class="row">
+                <div class="cardd">
+                  <div class="container resultcard">
+                    <div class="row">
+                      <div class="col-4">
+                        <a href="X5-car.html"><img src="images/m4.jpg" alt="..." /> </a>
+                      </div>
+                      <div class="col-8">
+                        <div class="card-body">
+                          <div class="one-line">
+                            <a href="X5-car.html"><h5 class="card-title">BMW M4 XDrive</h5></a> 
+                          <div class="result-price">$88,470</div>
+                          </div>  
+                          <div class="card-text">
+                            <div class="card-options">
+                              <div class="option">Start engine - Leather seats - Navgigation System,</div>
+                            </div>
+                            <p><span>Location:</span> Dallas, TX, USA</p>
+                            <div class="card-info">
+                              <div class="result-year">2022</div>
+                              <div class="result-opt">Automatic - V6 - AWD</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cardd">
+                  <div class="container resultcard">
+                    <div class="row">
+                      <div class="col-4">
+                        <a href="X5-car.html"><img src="images/ford_truck.jpg" alt="..." /> </a>
+                      </div>
+                      <div class="col-8">
+                        <div class="card-body">
+                          <div class="one-line">
+                            <a href="X5-car.html"><h5 class="card-title">Ford Raptor F-150</h5></a> 
+                            <h5 class="card-title"></h5>
+                            <div class="result-price">$70,555</div>
+                          </div>            
+                          <div class="card-text">
+                            <div class="card-options">
+                              <div class="option">Start engine - Leather seats - Navgigation System,</div>
+                            </div>
+                            <p><span>Location:</span> Dallas, TX, USA</p>
+                            <div class="card-info">
+                              <div class="result-year">2018</div>
+                              <div class="result-opt">Automatic - V8 - AWD</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cardd">
+                  <div class="container resultcard">
+                    <div class="row">
+                      <div class="col-4">
+                        <a href="X5-car.html"><img src="images/svr.jpg" alt="..." /> </a>
+                      </div>
+                      <div class="col-8">
+                        <div class="card-body">
+                          <div class="one-line">
+                            <a href="X5-car.html"><h5 class="card-title">Range Rover SVR</h5></a> 
+                            <h5 class="card-title"></h5>
+                          <div class="result-price">$95,000</div>
+                          </div>              
+                          <div class="card-text">
+                            <div class="card-options">
+                              <div class="option">Start engine - Leather seats - Navgigation System,</div>
+                            </div>
+                            <p><span>Location:</span> Dallas, TX, USA</p>
+                            <div class="card-info">
+                              <div class="result-year">2022</div>
+                              <div class="result-opt">Automatic - V8 - AWD</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="pills-profile"
+          role="tabpanel"
+          aria-labelledby="pills-profile-tab"
+          tabindex="0"
+        >
+          <div class="row">
+            <div class="second-page results">
+              <div class="row">
+                <div class="cardd">
+                  <div class="container resultcard">
+                    <div class="row">
+                      <div class="col-4">
+                        <a href="X5-car.html"><img src="images/m8.jpg" alt="..." /> </a>
+                      </div>
+                      <div class="col-8">
+                        <div class="card-body">
+                          <div class="one-line">
+                             <a href="X5-car.html"><h5 class="card-title">BMW M8 2-Door Coupe Grey</h5></a>
+                          <div class="result-price">$88,470</div>
+                          </div>              
+                          <div class="card-text">
+                            <div class="card-options">
+                              <div class="option">Start engine - Leather seats - Navgigation System,</div>
+                            </div>
+                            <p><span>Location:</span> Dallas, TX, USA</p>
+                            <div class="card-info">
+                              <div class="result-year">2022</div>
+                              <div class="result-opt">Automatic - V6 - AWD</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cardd">
+                  <div class="container resultcard">
+                    <div class="row">
+                      <div class="col-4">
+                         <a href="X5-car.html"><img src="images/c63.jpg" alt="..." /> </a>
+                      </div>
+                      <div class="col-8">
+                        <div class="card-body">
+                          <div class="one-line">
+                             <a href="X5-car.html"><h5 class="card-title">Mercedes C63 AMG</h5></a>
+                          <div class="result-price">$88,470</div>
+                          </div>              
+                          <div class="card-text">
+                            <div class="card-options">
+                              <div class="option">Start engine - Leather seats - Navgigation System,</div>
+                            </div>
+                            <p><span>Location:</span> Dallas, TX, USA</p>
+                            <div class="card-info">
+                              <div class="result-year">2022</div>
+                              <div class="result-opt">Automatic - V8 - RWD</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cardd">
+                  <div class="container resultcard">
+                    <div class="row">
+                      <div class="col-4">
+                        <a href="X5-car.html"><img src="images/m4.jpg" /></a>
+                      </div>
+                      <div class="col-8">
+                        <div class="card-body">
+                          <div class="one-line">
+                            <a href="X5-car.html"><h5 class="card-title">BMW M4 XDrive</h5></a> 
+                          <div class="result-price">$88,470</div>
+                          </div>                            <div class="card-text">
+                            <div class="card-options">
+                              <div class="option">Start engine - Leather seats - Navgigation System,</div>
+                            </div>
+                            <p><span>Location:</span> Dallas, TX, USA</p>
+                            <div class="card-info">
+                              <div class="result-year">2022</div>
+                              <div class="result-opt">Automatic - V6 - AWD</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="second-page slide-num">
+      <p>
+        <span class="active">1</span> <span>2</span> <span>3</span> <span>4</span>
+        <span>5</span> <span>6</span> <span>6</span>
+        <!-- <span class="swipe"><i class="fa-solid fa-angle-right"></i></span> -->
+      </p>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <!-- <div class="logo col-lg-2 col-md-12">WONDER</div> -->
+          <div class="col-md-2 col-6">
+            <ul>
+              <li><a href="more-cars.html">Listing</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="aboutUs.html">About US</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 col-6">
+            <ul>
+              <li><a href="index .html">Blog</a></li>
+              <li><a href="ourTeam.html">Our Team</a></li>
+              <li><a href="contactUs.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-12">
+            <p>
+              Award-winning, family owned dealership of new and pre-owned
+              vehicles with several locations across the city. Lowest prices and
+              the best customer service guaranteed.
+            </p>
+          </div>
+          <div class="col-lg-4 col-12 last-col">
+            <h2>(123) <span> 456-78901 </span></h2>
+            support@wonder.com <br />
+            West 12th Street <br />
+            New York, Ny, USA
+          </div>
+        </div>
+      </div>
+      <hr />
+      <p class="copyright">
+        Copyright © 2022. All rights reserved. Designed by
+        <span>Ahmed Elgamal</span>
+      </p>
+    </footer>
+
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js.map"></script>
+    <script src="https://fastly.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+      $(document).ready(function(){
+
+var list = $(".list li");
+var numToShow = 3;
+var button = $("#next");
+var numInList = list.length;
+list.hide();
+if (numInList > numToShow) {
+  button.show();
+}
+list.slice(0, numToShow).show();
+
+button.click(function(){
+    var showing = list.filter(':visible').length;
+    list.slice(showing - 1, showing + numToShow).fadeIn();
+    var nowShowing = list.filter(':visible').length;
+    if (nowShowing >= numInList) {
+      button.hide();
+    }
+});
+
+});
+    </script>
+
+    <script>
+      $(document).ready(function() {
+       $('.js-example-basic-single').select2({
+         width: '100%',
+         dropdownAutoWidth: true,
+       });
+     });
+   </script>
+  </body>
+</html>
