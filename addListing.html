@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Listing</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css.map" />
+    <link
+      rel="stylesheet"
+      href="https://fastly.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/dropzone.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <!-- <div class="container"></div> -->
+        <a class="navbar-brand" href="index .html"
+          ><img class="logo" src="images/logo.02.jpg" /><span
+            >wonder cars</span
+          ></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="nav-1 navbar-nav dropdown">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link active"
+                data-bs-toggle="dropdown"
+                aria-current="page"
+                href="index .html"
+                ><a class="home-link" href="index .html">Home</a></a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Search
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Listing
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Pages <i class="fa-solid fa-chevron-down"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li>
+                  <a class="dropdown-item" href="more-cars.html">More Cars</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="aboutUs.html">About Us</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="contactUs.html">Contact</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="ourTeam.html"
+                    >Our team - simple</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="ourTeamAdvanced.html"
+                    >Our team - Advanced</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="sold.html">Sold</a></li>
+                <li>
+                  <a class="dropdown-item" href="loanCalculator.html"
+                    >Loan Calculator</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                <li>
+                  <a class="dropdown-item" href="panel-account.html">Account</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="login.html"
+                    >Login / Register</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="404page.html">404 Page</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav-2 navbar-nav flex-row">
+            <li>
+              <a href="panel-account.html"><i class="fa-solid fa-user"></i></a>
+            </li>
+            <li>
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+            <i
+              class="fa-solid fa-grip-lines-vertical"
+              style="color: rgba(0, 0, 0, 0.162); margin: 20px 0px 0px 7px"
+            ></i>
+            <li>
+              <a class="nav-link" href="login.html">Rigester</a>
+            </li>
+            <li>
+              <a class="add-listing nav-link" href="addListing.html"
+                ><i class="fa-solid fa-plus"></i> Add Listing</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container add-listing-page">
+      <h3 class="add-listing-h3">Add Listing</h3>
+      <div class="add-listing-cont">
+        <div class="row">
+          <div class="col-10 also">
+            You can also <a href="login.html">Log in</a> or
+            <a href="login.html">Register</a> first.
+          </div>
+          <div class="col-10">
+            <label class="listing-label" for="title">Listing Title</label>
+          </div>
+          <input
+            class="col-10 listing-input width" 
+            type="text"
+            id="title"
+            placeholder="Enter title here"
+          />
+          <div class="second-page categories-section add-listing-categories-section">
+            <div class="container">
+              <div class="dropdowns row second-dropdowns">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 cat-btn">
+                  <div class="categories-button">
+                    <div class="btn-group">
+                      <h5>Brand:</h5>
+                      <select
+                        name="brand"
+                        id="brand"
+                        type="button"
+                        class="btn dropdown-toggle"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <option value="">Audi</option>
+                        <option value="">BMW</option>
+                        <option value="">Chevrolet</option>
+                        <option value="">Mercedes</option>
+                        <option value="">Range Rover</option>
+                        <option value="">Porche</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 cat-btn">
+                  <div class="categories-button">
+                    <div class="btn-group">
+                      <h5>model:</h5>
+                      <select
+                        name="brand"
+                        id="brand"
+                        type="button"
+                        class="btn dropdown-toggle"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <option value="">A4</option>
+                        <option value="">A5</option>
+                        <option value="">Q7</option>
+                        <option value="">RS5</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 cat-btn">
+                  <div class="categories-button">
+                    <div class="btn-group">
+                      <h5>condetion:</h5>
+                      <select
+                        name="brand"
+                        id="brand"
+                        type="button"
+                        class="btn dropdown-toggle"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <option value="">NEW</option>
+                        <option value="">Used</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 cat-btn">
+                  <div class="categories-button">
+                    <div class="btn-group">
+                      <h5>Type:</h5>
+                      <select
+                        name="brand"
+                        id="brand"
+                        type="button"
+                        class="btn dropdown-toggle"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <option value="">SUV</option>
+                        <option value="">Sedan</option>
+                        <option value="">Hathhback</option>
+                        <option value="">4x4</option>
+                        <option value="">Coupe</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 cat-btn">
+                  <div class="categories-button">
+                    <div class="btn-group">
+                      <h5>color:</h5>
+                      <select
+                        name="brand"
+                        id="brand"
+                        type="button"
+                        class="btn dropdown-toggle"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <option value="">Red</option>
+                        <option value="">Black</option>
+                        <option value="">White</option>
+                        <option value="">Grey</option>
+                        <option value="">Blue</option>
+                        <option value="">Green</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 cat-btn">
+                  <div class="categories-button">
+                    <div class="btn-group">
+                      <h5>Milage:</h5>
+                      <select
+                        name="brand"
+                        id="brand"
+                        type="button"
+                        class="btn dropdown-toggle"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <option value="">10,000 miles</option>
+                        <option value="">30,000 miles</option>
+                        <option value="">50,000 miles</option>
+                        <option value="">70,000 miles</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 cat-btn">
+                  <div class="categories-button">
+                    <div class="btn-group">
+                      <h5>Clynders:</h5>
+                      <select
+                        name="brand"
+                        id="brand"
+                        type="button"
+                        class="btn dropdown-toggle"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <option value="">4V</option>
+                        <option value="">6V</option>
+                        <option value="">8V</option>
+                        <option value="">10V</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 cat-btn">
+                  <div class="categories-button">
+                    <div class="btn-group">
+                      <h5>Milage:</h5>
+                      <select
+                        name="brand"
+                        id="brand"
+                        type="button"
+                        class="btn dropdown-toggle"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <option value="">10,000 miles</option>
+                        <option value="">30,000 miles</option>
+                        <option value="">50,000 miles</option>
+                        <option value="">70,000 miles</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-4 col-sm-6 col-12 cat-btn">
+                  <div class="categories-button">
+                    <div class="btn-group">
+                      <h5>Price:</h5>
+                      <input style="border: 0" type="number" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-4 col-sm-6 col-12 cat-btn">
+                  <div class="categories-button">
+                    <div class="btn-group">
+                      <h5>Location:</h5>
+                      <input style="border: 0" type="text" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container gallery-page">
+      <h5>Gallery</h5>
+      <div class="gallery">
+        <form
+          action="/file-upload"
+          class="dropzone"
+          id="my-awesome-dropzone"
+          method="post"></form>
+      </div>
+    </div>
+    <div class="container gallery-page">
+      <h5>Add Atachment</h5>
+      <div class="gallery">
+        <form
+          action="/file-upload"
+          class="dropzone"
+          id="my-awesome-dropzone"
+          method="post"></form>
+      </div>
+    </div>
+    <div class="container gallery-page">
+      <h5>Location</h5>
+      <div class="gallery">
+        <div class="container link">
+            <input
+              class="location-input"
+              type="text"
+              placeholder="Enter a location"
+            />
+            <input  style="color: #ff4605; margin: 20px 0;"id="loc" type="checkbox">
+          <label for="loc" style="display: inline;">Autocomplete address when marker position is changed.</label>
+
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.617734162713!2d30.94621351506946!3d30.047822881881036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145859a527604633%3A0x3d1c14a9e267f241!2sCity%20walk!5e0!3m2!1sen!2seg!4v1666179555254!5m2!1sen!2seg"
+             width="1000" height="450" style="border:0; margin-bottom: 40px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          </div>
+      </div>
+    </div>
+    <div class="container features-page">
+      <h5>Features</h5>
+      <div class="features">
+          <div class="row">
+              <div class="feature col-lg-2 col-md-4 col-6">
+                  360-degree camera
+              </div>
+              <div class="feature col-lg-2 col-md-4 col-6">
+                  Blind spot alert
+              </div>
+              <div class="feature col-lg-2 col-md-4 col-6">
+                  Bluetooth
+              </div>
+              <div class="feature col-lg-2 col-md-4 col-6">
+                  Cooled seats
+              </div>
+              <div class="feature col-lg-2 col-md-4 col-6">
+                  Heated seats
+              </div>
+              <div class="feature col-lg-2 col-md-4 col-6">
+                  Keyless start
+              </div>
+              <div class="feature col-lg-2 col-md-4 col-6">
+                  Leather seats
+              </div>
+              <div class="feature col-lg-2 col-md-4 col-6">
+                Memory seat
+              </div>
+              <div class="feature col-lg-2 col-md-4 col-6">
+                Navigation System
+              </div>
+              <div class="feature col-lg-2 col-md-4 col-6">
+                Side airbags
+              </div>
+              <div class="feature col-lg-2 col-md-4 col-6">
+                Sound system
+              </div>
+              <div class="feature col-lg-2 col-md-4 col-6">
+                Traction Control
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="container features-page">
+      <h5>Safety Features</h5>
+      <div class="features">
+          <div class="row">
+              <div class="feature col-lg-2 col-md-4 col-6">
+                Active head restraints
+              </div>
+              <div class="feature col-lg-2 col-md-4 col-6">
+                Adaptive headlights
+              </div>
+              <div class="feature col-lg-2 col-md-4 col-6">
+                Backup camera
+              </div>
+              <div class="feature col-lg-2 col-md-4 col-6">
+                Blind-spot warning
+              </div>
+              <div class="feature col-lg-2 col-md-4 col-6">
+                Brake assist
+              </div>
+              <div class="feature col-lg-2 col-md-4 col-6">
+                Forward-collision warning
+              </div>
+              <div class="feature col-lg-2 col-md-4 col-6">
+                Lane keeping assist
+              </div>
+              <div class="feature col-lg-2 col-md-4 col-6">
+                Pedestrian detection
+              </div>
+              <div class="feature col-lg-2 col-md-4 col-6">
+                Sideview camera
+              </div>
+          </div>
+      </div>
+      <div class="listing-btn">
+        <button class="listing-btn">
+          Add Listing
+        </button>
+      </div>
+    </div>
+    
+    
+
+
+    <footer style="margin-top: 40px;">
+      <div class="container">
+        <div class="row">
+          <!-- <div class="logo col-lg-2 col-md-12">WONDER</div> -->
+          <div class="col-md-2 col-6">
+            <ul>
+              <li><a href="more-cars.html">Listing</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="aboutUs.html">About US</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 col-6">
+            <ul>
+              <li><a href="index .html">Blog</a></li>
+              <li><a href="ourTeam.html">Our Team</a></li>
+              <li><a href="contactUs.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-12">
+            <p>
+              Award-winning, family owned dealership of new and pre-owned
+              vehicles with several locations across the city. Lowest prices and
+              the best customer service guaranteed.
+            </p>
+          </div>
+          <div class="col-lg-4 col-12 last-col">
+            <h2>(123) <span> 456-78901 </span></h2>
+            support@wonder.com <br />
+            West 12th Street <br />
+            New York, Ny, USA
+          </div>
+        </div>
+      </div>
+      <hr />
+      <p class="copyright">
+        Copyright © 2022. All rights reserved. Designed by
+        <span>Ahmed Elgamal</span>
+      </p>
+    </footer>
+
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js.map"></script>
+    <script src="https://fastly.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="js/dropzone.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
